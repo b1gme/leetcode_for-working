@@ -44,7 +44,7 @@ class Solution(object):
         for index,value in enumerate(s):
             if value in trace and trace[value]>=start:
                 rlen=max(rlen,index-start)
-                start=index+1
+                start=trace[value]+1
             trace[value]=index
         return max(rlen,len(s)-start)
         
