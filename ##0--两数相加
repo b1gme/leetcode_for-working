@@ -19,7 +19,7 @@ class Solution(object):
         :rtype: List[int]
         """
         hashmap={}
-        for index,num in enumerate(nums):
+        for index,num in enumerate(nums):#使用字典的方式简单很多
             hashmap[num]=index
             a_num=target - num
             if a_num in hashmap:
